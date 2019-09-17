@@ -1,0 +1,8 @@
+<h3>Posts</h3>
+
+<div class="post-item" *ngFor="let post of posts | async">
+  <span>{{ post.userId }}</span>
+  <span>{{ post.id}}</span>
+  <span>{{ post.title}}</span>
+  <span>{{ post.body}}</span>
+</div>
