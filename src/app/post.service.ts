@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Post } from 'src/app/model/Post';
 import {AppSettings} from 'src/app/AppSetings';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -27,5 +29,10 @@ export class PostService {
 
   getPosts() {
     return this.http.get(AppSettings.API_ENDPOINT + 'posts');
+  }
+
+  public getEmployees(): Observable<Post[]> {
+    const url = AppSettings.API_ENDPOINT;
+    return this.get<Post[]>();
   }
 }
