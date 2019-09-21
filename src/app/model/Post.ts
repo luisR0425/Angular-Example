@@ -14,7 +14,7 @@ export class Post {
     this.userId = userId;
     this.id = id;
     this.title = title;
-    this.body = title;
+    this.body = body;
   }
 
 }
