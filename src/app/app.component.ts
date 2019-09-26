@@ -11,18 +11,5 @@ export class AppComponent {
   title = 'Angular-Example';
   posts = new Array<Post>();
 
-  constructor( empService: PostService ) {
-
-    empService.getEmployees().subscribe(response => {
-      this.posts = response.map(item => {
-        return new Post(
-            item.userId,
-            item.id,
-            item.title,
-            item.body
-        );
-      });
-    });
-
-  }
+  constructor( postService: PostService ) { }
 }

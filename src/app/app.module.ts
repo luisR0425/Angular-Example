@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import {
         MatAutocompleteModule,
         MatBadgeModule,
@@ -45,11 +46,13 @@ import {
 import { AppComponent } from './app.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PostDetailsComponent } from './post-details/post-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostListComponent,
+    PostDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -94,7 +97,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RouterModule.forRoot([
       { path: '', component: PostListComponent},
     ]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

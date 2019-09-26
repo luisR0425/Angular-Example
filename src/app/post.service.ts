@@ -27,12 +27,12 @@ export class PostService {
     return this.items;
   }
 
-  getPosts() {
+  /*getPosts() {
     return this.http.get(AppSettings.API_ENDPOINT + 'posts');
-  }
+  }*/
 
-  public getEmployees(): Observable<Post[]> {
+  public getPosts(): Observable<Post[]> {
     const url = AppSettings.API_ENDPOINT;
-    return this.get<Post[]>();
+    return this.http.get<Post[]>(url + 'posts');
   }
 }
