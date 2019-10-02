@@ -12,18 +12,24 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.4",
-    "@angular/cdk": "~8.2.0",
+    "@angular/cdk": "^8.2.2",
     "@angular/common": "~8.2.4",
     "@angular/compiler": "~8.2.4",
     "@angular/core": "~8.2.4",
     "@angular/forms": "~8.2.4",
-    "@angular/material": "^8.2.0",
+    "@angular/material": "^8.2.2",
     "@angular/platform-browser": "~8.2.4",
     "@angular/platform-browser-dynamic": "~8.2.4",
     "@angular/router": "~8.2.4",
+    "angular-in-memory-web-api": "0.8.0",
+    "core-js": "2.6.9",
+    "jasmine-core": "2.99.1",
+    "jasmine-marbles": "0.6.0",
+    "material-icons": "^0.3.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
+    "web-animations-js": "2.3.2",
+    "zone.js": "^0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.3",

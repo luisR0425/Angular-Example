@@ -47,12 +47,14 @@ import { AppComponent } from './app.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PostDetailsComponent } from './post-details/post-details.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostListComponent,
     PostDetailsComponent,
+    TopBarComponent,
   ],
   imports: [
     BrowserModule,

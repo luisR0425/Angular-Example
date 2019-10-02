@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatAccordion } from '@angular/material';
 
 import { PostService } from '../post.service';
 import { Post } from '../model/Post';
@@ -12,6 +13,10 @@ export class PostListComponent implements OnInit {
   posts: any;
 
   selectedPost: Post;
+
+  panelOpenState = false;
+
+  @ViewChild('accordion', {static: true}) Accordion: MatAccordion
 
   constructor(
     private postService: PostService
